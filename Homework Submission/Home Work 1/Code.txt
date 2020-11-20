@@ -1,10 +1,11 @@
-********************************* DEPARTMENTS ***********************************************************
 CREATE DATABASE cse311l_section_2_fall_20;
+
 CREATE TABLE departments(
 Department_id int(4) PRIMARY KEY,
 Department_name varchar(30) NOT NULL,
 Manager_id int(6),
 Location_id int (4));
+
 INSERT INTO departments VALUES(10,'Administration',200,1700);
 INSERT INTO departments VALUES(20,'Marketing',201,1800);
 INSERT INTO departments VALUES(50,'Shipping',124,1500);
@@ -13,3 +14,17 @@ INSERT INTO departments VALUES(80,'Sales',149,2500);
 INSERT INTO departments VALUES(90,'Executive',100,1700);
 INSERT INTO departments VALUES(110,'Accounting',205,1700);
 INSERT INTO departments(Department_id,Department_name,Location_id) VALUES(190,'Contracting',1700);
+
+CREATE TABLE Locations(
+    Location_id int(4) PRIMARY KEY,
+    Street_Address varchar(40),
+    Postal_Code varchar(12),
+    City varchar(30) NOT NULL,
+    State_Province varchar(25),
+    Country_ID varchar(2));
+
+INSERT INTO Locations VALUES(1400,'2014 Jabberwocky Rd','26192','Southlake','Texas','US');
+INSERT INTO Locations VALUES(1500,'2011 Interiors Blvd','99236','South San Francisco','California','US');
+INSERT INTO Locations VALUES(1700,'2004 Charade Rd','98199','Seattle','Washington','US');
+INSERT INTO Locations VALUES(1800,'460 Bloor St. W.','ON M5S 1X8','Toronto','Ontario','CA');
+INSERT INTO Locations VALUES(2500,'Magdalen Centre- The Oxford Sc. Park','OX9 9ZB','OXford','Oxford','UK');
