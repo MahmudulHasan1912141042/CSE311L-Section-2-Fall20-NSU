@@ -1,0 +1,15 @@
+********************************* DEPARTMENTS ***********************************************************
+CREATE DATABASE cse311l_section_2_fall_20;
+CREATE TABLE departments(
+Department_id int(4) PRIMARY KEY,
+Department_name varchar(30) NOT NULL,
+Manager_id int(6),
+Location_id int (4));
+INSERT INTO departments VALUES(10,'Administration',200,1700);
+INSERT INTO departments VALUES(20,'Marketing',201,1800);
+INSERT INTO departments VALUES(50,'Shipping',124,1500);
+INSERT INTO departments VALUES(60,'IT',103,1400);
+INSERT INTO departments VALUES(80,'Sales',149,2500);
+INSERT INTO departments VALUES(90,'Executive',100,1700);
+INSERT INTO departments VALUES(110,'Accounting',205,1700);
+INSERT INTO departments(Department_id,Department_name,Location_id) VALUES(190,'Contracting',1700);
